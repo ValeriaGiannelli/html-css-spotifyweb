@@ -14,6 +14,7 @@
 #main {
     height: calc(100vh - 100px);
     width: 100%;
+    display: flex;
 
     /* DEBUG */
     background-color: aqua;
@@ -28,8 +29,7 @@
 
 
 
-
-/************ RESPONSIVE MAIN - manu di sinistra  *************/
+/************ RESPONSIVE MAIN - menu di sinistra  *************/
 
 /* MD */
 @media all and (max-width: 878px) {}
@@ -39,6 +39,7 @@
 
 /* XS */
 @media all and (max-width: 552px) {
+    /* cambio larghezza sezione */
     #left-menu {
         width: 50px;
     }
@@ -48,6 +49,35 @@
 /************ ---------------------------------------- *************/
 
 
+
+
+
+
+/* sezione principale di scelta brani */
+#right-section{
+    width: calc(100% - 225px);
+    height: 100%;
+    background-color: #151822;
+}
+
+/************ RESPONSIVE MAIN - sezione scelta dei brani  *************/
+
+/* MD */
+@media all and (max-width: 878px) {}
+
+/* S */
+@media all and (max-width: 639px) {}
+
+/* XS */
+@media all and (max-width: 552px) {
+    /* cambio larghezza sezione */
+    #right-section{
+        width: calc(100% - 50px);
+    }
+    
+}
+
+/************ ---------------------------------------- *************/
 
 
 /* PLAYER */
