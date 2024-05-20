@@ -7,6 +7,7 @@
 
 body{
     font-family: "Montserrat", sans-serif;
+    color: white;
 }
 
 
@@ -123,20 +124,59 @@ a{
     background-color: red;
 }
 
-/* galleria della scelta brani */
+/* container scelta brani */
 #gallery{
-    padding-top: 100px;
+    padding: 100px 20px 0;
     overflow-y: auto;
     height: calc(100vh - 100px);
+}
+
+/* menu di navigazione  */
+#gallery nav{
+    width: 100%;
+
+    /* DEBUG */
+    height: 50px;
+    background-color:blue;
+}
+
+/* Ascoltati di recente */
+#recently-played{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+
+    /* DEBUG */
+    /* height: 200px; */
+    background-color: cadetblue;
+}
+
+#recently-played div{
+    width: calc(100% / 6 - 10px);
+    /* capire se ha senso una larghezza minima */
+    /* min-width: 140px; */
+
+    /* DEBUG */
+    height: 150px;
+    background-color: brown;
 }
 
 /************ RESPONSIVE MAIN - sezione scelta dei brani  *************/
 
 /* MD */
-@media all and (max-width: 878px) {}
+@media all and (max-width: 878px) {
+    #recently-played div{
+        width: calc(100% / 4 - 10px);
+    }
+}
 
 /* S */
-@media all and (max-width: 639px) {}
+@media all and (max-width: 639px) {
+    #recently-played div{
+        width: calc(100% / 2 - 10px);
+    }
+}
 
 /* XS */
 @media all and (max-width: 552px) {
@@ -149,6 +189,10 @@ a{
 }
 
 /************ ---------------------------------------- *************/
+
+
+
+
 
 
 /* PLAYER */
