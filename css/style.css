@@ -54,10 +54,27 @@
 
 
 /* sezione principale di scelta brani */
+
+/* sfondo della sezione principale */
 #right-section{
     width: calc(100% - 225px);
     height: 100%;
     background-color: #151822;
+}
+
+/* barra dell'upgrade */
+#upgrade{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+a{
+
+    /* DEBUG */
+    background-color: red;
 }
 
 /************ RESPONSIVE MAIN - sezione scelta dei brani  *************/
