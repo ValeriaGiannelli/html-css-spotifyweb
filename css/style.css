@@ -84,6 +84,13 @@ a{
     background-color: red;
 }
 
+/* galleria della scelta brani */
+#gallery{
+    padding-top: 100px;
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+}
+
 /************ RESPONSIVE MAIN - sezione scelta dei brani  *************/
 
 /* MD */
@@ -94,6 +101,7 @@ a{
 
 /* XS */
 @media all and (max-width: 552px) {
+
     /* cambio larghezza sezione */
     #right-section{
         width: calc(100% - 50px);
