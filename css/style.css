@@ -10,6 +10,15 @@ body{
     color: white;
 }
 
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:#717171;
+    font-weight: 600;
+}
 
 
 
@@ -50,10 +59,31 @@ body{
 /* lista home - cerca - libreria */
 #left-menu nav{
     width: 100%;
+}
 
-    /* DEBUG */
-    height: 100px;
-    background-color: antiquewhite;
+/* metto in flex i li per allineare i contenuti */
+#left-menu nav li{
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+/* caratteristiche icone */
+#left-menu nav img{
+    max-width: 30px;
+    margin-right: 5px;
+    color: #282828;
+}
+
+/* caratteristiche area selezionata */
+.selected{
+    border-left: 3px solid #b6ff31;
+    color: #d1d1d1;
+}
+
+.selected a{
+    color: white;
 }
 
 
@@ -97,6 +127,7 @@ body{
         display: none;
     }
 
+    /* visualizza solo icone */
     .icon{
         display: inline-block;
         width: 100%;
@@ -136,11 +167,7 @@ body{
     z-index: 90;
 }
 
-a{
 
-    /* DEBUG */
-    background-color: red;
-}
 
 /* container scelta brani */
 #gallery{
