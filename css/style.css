@@ -27,9 +27,48 @@ body{
     width: 225px;
     height: 100%;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* logo */
+#logo{
+    width: 90%;
+    /* DEBUG */
+    height: 70px;
+    background-color: aqua;
+}
+
+/* lista home - cerca - libreria */
+#left-menu nav{
+    width: 100%;
+
+    /* DEBUG */
+    height: 100px;
+    background-color: antiquewhite;
 }
 
 
+/* playlist */
+#playlist{
+    width: 100%;
+
+    /* DEBUG */
+    height: 250px;
+    background-color:azure;
+}
+
+/* profilo e installa app */
+#profile{
+    width: 100%;
+    /* capire se è la soluzione giusta */
+    margin-top: auto;
+
+    /* DEBUG */
+    height: 50px;
+    background-color: aquamarine;
+    
+}
 
 /************ RESPONSIVE MAIN - menu di sinistra  *************/
 
@@ -67,14 +106,14 @@ body{
 /* barra dell'upgrade */
 #upgrade{
     height: 100px;
-    width: 100%;
+    width: calc(100% - 225px);
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: end;
     align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 90;
 }
 
@@ -103,7 +142,7 @@ a{
 @media all and (max-width: 552px) {
 
     /* cambio larghezza sezione */
-    #right-section{
+    #right-section, #upgrade{
         width: calc(100% - 50px);
     }
     
