@@ -154,12 +154,43 @@ a{
 /* PLAYER */
 #player {
     width: 100%;
+    min-width: 552px;
     height: 100px;
     background-color: #282828;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#listening{
+    width: 20%;
+    min-width: 184px;
+
+    /* DEBUG */
+    height: 50px;
+    background-color: aqua;
+}
+
+#command{
+    width: 40%;
+    min-width: 184px;
+
+    /* DEBUG */
+    height: 50px;
+    background-color: aqua;
+}
+
+#extra{
+    width: 20%;
+    min-width: 184px;
+
+    /* DEBUG */
+    height: 50px;
+    background-color: aqua;
 }
 
 /************ RESPONSIVE PLAYER  *************/
