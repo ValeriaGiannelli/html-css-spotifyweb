@@ -30,14 +30,21 @@ body{
     background-color: black;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* logo */
 #logo{
     width: 90%;
-    /* DEBUG */
-    height: 70px;
-    background-color: aqua;
+}
+
+.extended-logo{
+    width: 100%;
+    padding: 20px 55px 20px 10px;
+}
+
+.icon{
+    display: none;
 }
 
 /* lista home - cerca - libreria */
@@ -85,6 +92,17 @@ body{
     #left-menu {
         width: 50px;
     }
+
+    .extended-logo{
+        display: none;
+    }
+
+    .icon{
+        display: inline-block;
+        width: 100%;
+        padding: 5px;
+    }
+
     
 }
 
