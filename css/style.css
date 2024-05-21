@@ -370,6 +370,33 @@ a{
     width: 100%;
 }
 
+/* comandi per icona del play quando in hover */
+.hover-album{
+    position: relative;
+}
+
+.hover-album i{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+/* hover degli albul - playlist - artisti */
+.col:hover{
+    cursor: pointer;
+}
+
+.col:hover img{
+    opacity: 0.5;
+}
+
+.col:hover i{
+    display: block;
+}
+
 /* caratteristiche testo */
 .col h3{
     margin: 10px 0 5px;
