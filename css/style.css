@@ -334,11 +334,22 @@ a{
 
 
 /**** Ascoltati di recente *****/
-#gallery h2{
-    padding-bottom: 30px;
+.section-title{
+    margin-bottom: 30px;
 }
 
+/* titolo della sezione */
+.section-title h2{
+    padding-bottom: 10px;
+}
 
+/* eventuale sottotitolo */
+.section-title span{
+    color: #a3a3a3;
+    font-size: 14px;
+}
+
+/* riga che contiene album o playlist */
 .row{
     display: flex;
     gap: 10px;
@@ -369,6 +380,12 @@ a{
     font-size: 14px;
     color: #a3a3a3;
 }
+
+.round{
+    border-radius: 50%;
+}
+
+
 
 
 
@@ -418,12 +435,13 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
 /* brano in ascolto */
 #listening{
     width: 20%;
-    min-width: 184px;
+    min-width: 160px;
     padding-left: 10px;
     display: flex;
     align-items: center;
@@ -541,6 +559,10 @@ a{
 }
 
 /* XS */
-@media all and (max-width: 552px) {}
+@media all and (max-width: 552px) {
+    #listening .album{
+        width: 100%;
+    }
+}
 
 /************ ---------------------------------------- *************/
