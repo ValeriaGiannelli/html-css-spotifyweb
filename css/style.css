@@ -71,7 +71,7 @@ a{
 
 /* caratteristiche icone */
 #left-menu nav img{
-    max-width: 30px;
+    max-width: 25px;
     margin-right: 5px;
     color: #282828;
 }
@@ -89,11 +89,34 @@ a{
 /* playlist */
 #playlist{
     width: 100%;
+    padding-left: 15px;
+    margin-top: 20px;
 
     /* DEBUG */
     height: 250px;
-    background-color:azure;
 }
+
+#playlist strong{
+    display: block;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+#create-playlist{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#create-playlist i{
+    background-color: #717171;
+    color: black;
+    padding: 5px 7px;
+    font-size: 25px;
+}
+
+
+
 
 /* profilo e installa app */
 #profile{
@@ -133,17 +156,28 @@ a{
         padding: 5px;
     }
 
+    /* elimina le scritte */
     #left-menu li a{
         display: none
     }
 
+    /* mette il contenuto centrato */
     #left-menu nav li{
         justify-content: center;
         padding: 5px 0;
     }
 
+    #left-menu nav img{
+        margin-right: 0;
+    }
+
     .selected{
         border-left: 0px;
+    }
+
+    /* sezione playlist sparisce */
+    #playlist{
+        display: none;
     }
     
 }
