@@ -220,7 +220,38 @@ a{
     #playlist{
         display: none;
     }
+
+    /* sezione installa app e profilo */
+    /* tolgo padding e allinea al centro */
+    #down-section{
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
+    /* elimino i nomi delle sezioni */
+    #down-section a{
+        display: none;
+    }
+
+    /* tolgo il bordo inferiore all'install */
+    #app-install{
+        border-bottom: none;
+    }
     
+    /* tolgo eventuali margini impostati prima sia dalle icone che dalle immagini profilo */
+    #app-install i{
+        margin-right: 0;
+    }
+
+    #profile img{
+        margin-right: 0;
+    }
+
+    /* tolgo il flex così si allinea con il text-align center */
+    #profile{
+        display: block;
+    }
 }
 
 /************ ---------------------------------------- *************/
