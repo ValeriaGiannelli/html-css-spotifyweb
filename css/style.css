@@ -91,9 +91,6 @@ a{
     width: 100%;
     padding-left: 15px;
     margin-top: 20px;
-
-    /* DEBUG */
-    height: 250px;
 }
 
 #playlist strong{
@@ -108,6 +105,7 @@ a{
     gap: 10px;
 }
 
+/* modifica icona crea playlist */
 #create-playlist i{
     background-color: #717171;
     color: black;
@@ -115,6 +113,15 @@ a{
     font-size: 25px;
 }
 
+/* elenco delle playlist */
+#list-playlist{
+    margin-top: 15px;
+}
+
+#list-playlist li{
+    padding: 5px 0;
+    font-size: 14px;
+}
 
 
 
