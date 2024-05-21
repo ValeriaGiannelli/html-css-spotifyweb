@@ -600,10 +600,37 @@ li:hover a{
     width: 20%;
     background-color: #a3a3a3;
     padding: 2px;
+    position: relative;
+}
+
+/* per hover */
+.fa-solid.fa-circle {
+    display: none;
+    position: absolute;
+    top: -3.2px;
+    font-size: 12px;
+    right: 0;
+    cursor: pointer;
+  }
+
+/* hover */
+.duration:hover{
+    cursor: pointer;
+}
+
+.duration:hover .progression{
+    background-color: #b6ff31;
+    cursor: pointer;
+}
+
+.duration:hover .fa-solid.fa-circle{
+    display: inline-block;
 }
 
 
-/* parte destra */
+
+
+/**** parte destra ****/
 #extra{
     width: 20%;
     min-width: 184px;
@@ -615,6 +642,17 @@ li:hover a{
 
 #extra .duration{
     margin: 0 20px 0 0;
+}
+
+/* colore del pallino del volume */
+#extra .progression i{
+    color: white;
+}
+
+
+#extra i:hover{
+    color: white;
+    cursor: pointer;
 }
 
 
