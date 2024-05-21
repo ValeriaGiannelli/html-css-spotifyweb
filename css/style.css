@@ -285,6 +285,7 @@ a{
     
 }
 
+/* dettaglio tasto effettua upgrade */
 #upgrade a{
     border: 1px solid white;
     color: white;
@@ -306,11 +307,33 @@ a{
 /* menu di navigazione  */
 #gallery nav{
     width: 100%;
-
-    /* DEBUG */
-    height: 50px;
-    background-color:blue;
+    padding: 20px 0 35px;
 }
+
+#gallery ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#gallery a{
+    font-size: 14px;
+}
+
+/* selezione della sezione */
+.active{
+    width: 30%;
+    margin: 2px auto;
+    padding: 1px;
+    background-color: #b6ff31;
+}
+
+
+
+
+
+
 
 /* Ascoltati di recente */
 #recently-played{
