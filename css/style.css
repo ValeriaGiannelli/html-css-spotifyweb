@@ -126,16 +126,50 @@ a{
 
 
 /* profilo e installa app */
-#profile{
+#down-section{
     width: 100%;
     /* capire se è la soluzione giusta */
     margin-top: auto;
-
-    /* DEBUG */
-    height: 50px;
-    background-color: aquamarine;
-    
+    padding: 0px 15px;
 }
+
+/* sezione installazione app */
+#app-install{
+    color: #717171;
+    font-size: 14px;
+    border-bottom: 1px solid #717171;
+    padding-bottom: 5px;
+}
+
+#app-install i{
+    border: 1px solid #717171;
+    border-radius: 50%;
+    padding: 1px 2.5px;
+    font-size:10px;
+    margin-right: 5px;
+}
+
+/* sezione profilo */
+#profile{
+    padding: 10px 0px 5px;
+    display: flex;
+    align-items: center;
+}
+#profile img{
+    width: 25px;
+    color: white;
+    background: #717171;
+    border-radius: 50%;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#profile a{
+    color: white;
+    font-size: 14px;
+}
+
+
 
 /************ RESPONSIVE MAIN - menu di sinistra  *************/
 
