@@ -130,6 +130,8 @@ li:hover a{
 /* elenco delle playlist */
 #list-playlist{
     margin-top: 15px;
+    height: calc(100vh - 455px);
+    overflow-y: auto;
 }
 
 #list-playlist li{
