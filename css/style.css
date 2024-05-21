@@ -261,7 +261,7 @@ a{
 
 
 
-/* sezione principale di scelta brani */
+/* SEZIONE PRINCIPALE SCELTA BRANI */
 
 /* sfondo della sezione principale */
 #right-section{
@@ -372,14 +372,53 @@ a{
     justify-content: space-between;
 }
 
+/* brano in ascolto */
 #listening{
     width: 20%;
     min-width: 184px;
-
-    /* DEBUG */
-    height: 50px;
-    background-color: aqua;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
 }
+
+/* grandezza album */
+#listening .album{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.album img{
+    width: 100%;
+}
+
+/* informazioni autore e brano */
+.info{
+    margin-right: 20px;
+}
+
+.info span{
+    display: block;
+}
+
+.author{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.song-name{
+    color: #a3a3a3;
+    font-size: 12px;
+}
+
+.icons-song{
+    color: #a3a3a3;
+}
+
+.icons-song i{
+    margin: 0 5px;
+}
+
 
 #command{
     width: 40%;
