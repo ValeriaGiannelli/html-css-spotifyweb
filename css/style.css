@@ -42,7 +42,7 @@ a{
     align-items: center;
 }
 
-/* logo */
+/**** logo ****/
 #logo{
     width: 90%;
 }
@@ -56,7 +56,7 @@ a{
     display: none;
 }
 
-/* lista home - cerca - libreria */
+/**** lista home - cerca - libreria ****/
 #left-menu nav{
     width: 100%;
 }
@@ -86,7 +86,7 @@ a{
 }
 
 
-/* playlist */
+/**** playlist ****/
 #playlist{
     width: 100%;
     padding-left: 15px;
@@ -125,7 +125,7 @@ a{
 
 
 
-/* profilo e installa app */
+/**** profilo e installa app ****/
 #down-section{
     width: 100%;
     /* capire se è la soluzione giusta */
@@ -270,7 +270,7 @@ a{
     background-color: #151822;
 }
 
-/* barra dell'upgrade */
+/**** barra dell'upgrade ****/
 #upgrade{
     height: 100px;
     width: calc(100% - 225px);
@@ -297,7 +297,7 @@ a{
 
 
 
-/* container scelta brani */
+/**** container scelta brani ****/
 #gallery{
     padding: 100px 20px 0;
     overflow-y: auto;
@@ -333,42 +333,57 @@ a{
 
 
 
+/**** Ascoltati di recente *****/
+#gallery h2{
+    padding-bottom: 30px;
+}
 
 
-/* Ascoltati di recente */
-#recently-played{
+.row{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    
-
-    /* DEBUG */
-    /* height: 200px; */
-    background-color: cadetblue;
+    margin-bottom: 30px;
 }
 
-#recently-played div{
+/* gruppo con immagine e testo */
+.col{
     width: calc(100% / 6 - 10px);
-    /* capire se ha senso una larghezza minima */
-    /* min-width: 140px; */
-
-    /* DEBUG */
-    height: 150px;
-    background-color: brown;
+    text-align: center;
+    min-width: 140px; 
+    max-width: 250px
 }
+
+/* caratteristiche immagine */
+.col img{
+    width: 100%;
+}
+
+/* caratteristiche testo */
+.col h3{
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.col span{
+    font-size: 14px;
+    color: #a3a3a3;
+}
+
+
 
 /************ RESPONSIVE MAIN - sezione scelta dei brani  *************/
 
 /* MD */
 @media all and (max-width: 878px) {
-    #recently-played div{
+    .col{
         width: calc(100% / 4 - 10px);
     }
 }
 
 /* S */
-@media all and (max-width: 639px) {
-    #recently-played div{
+@media all and (max-width: 704px) {
+    .col{
         width: calc(100% / 2 - 10px);
     }
 }
